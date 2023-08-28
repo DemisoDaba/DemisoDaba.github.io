@@ -1,0 +1,15 @@
+CSS inset Property
+Use the 'inset' property in CSS for box positioning
+instead of separate 'top', 'right', 'bottom', and 'left'
+properties.
+
+div 
+{
+top: 20px;
+bottom: 20px;
+left: 20px;
+right: 20px;
+}
+div {
+inset: 20px;
+}
