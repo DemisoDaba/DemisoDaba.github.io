@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed 6 20:20:04 2023
+
+@author: Demiso
+"""
+
 # Define program details
 program_name = "#ALX_SE"
 sprint_number = 2
