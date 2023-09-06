@@ -12,7 +12,8 @@ months_completed = 6
 organization = "@alx_africa"
 
 # Create a message
-message = (
+message = 
+(
     f"I've completed half of the {program_name} program,"
     f"\nconcluding Sprint {sprint_number},"
     f"\nand I can confidently say that I'm a completely different person than when I began."
