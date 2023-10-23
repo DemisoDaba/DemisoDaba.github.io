@@ -33,14 +33,19 @@ nav li {
 nav a {
     text-decoration: none;
     color: #fff;
+    cursor: pointer; /* Add pointer cursor to indicate interactivity */
 }
 
-section {
+#content {
     background-color: #fff;
     padding: 2rem;
     margin: 2rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+    display: none; /* Initially hide all tab content */
 }
 
 img {
@@ -54,4 +59,5 @@ footer {
     color: #fff;
     padding: 1rem 0;
 }
+
 
