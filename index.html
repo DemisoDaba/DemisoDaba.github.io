@@ -3,7 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* Reset some default styles for better consistency */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 1rem 0;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer; /* Add pointer cursor to indicate interactivity */
+        }
+
+        #content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab-content {
+            display: none; /* Initially hide all tab content */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+    </style>
     <title>Your Name - Personal Website</title>
 </head>
 <body>
@@ -12,40 +74,63 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" onclick="showTab('about')">About Me</a></li>
+            <li><a href="#experience" onclick="showTab('experience')">Experience</a></li>
+            <li><a href="#education" onclick="showTab('education')">Education</a></li>
+            <li><a href="#contact" onclick="showTab('contact')">Contact</a></li>
         </ul>
     </nav>
     <div id="content">
         <section id="about" class="tab-content">
             <h2>About Me</h2>
+            <img src="assets/img/my-photo.jpg" alt="Your Photo">
             <p>
-                Welcome to my personal website. Here, you can learn more about me, my background, and my interests.
+                Welcome to my personal website. I am a passionate individual with expertise in various fields.
+                Feel free to connect with me on social media to learn more about my background.
             </p>
         </section>
         <section id="experience" class="tab-content">
             <h2>Experience</h2>
             <p>
-                This section is where I highlight my work experience and accomplishments.
+                I have several years of experience working in different roles, including:
+                - Role 1
+                - Role 2
+                - Role 3
             </p>
         </section>
-        <section id="education" class="tab-content">
+        <section id="education" class "tab-content">
             <h2>Education</h2>
             <p>
-                In this section, you can explore my educational journey, degrees earned, and academic achievements.
+                I completed my education at the following institutions and earned the following degrees:
+                - University A: Bachelor's Degree
+                - University B: Master's Degree
+                - University C: Ph.D.
             </p>
         </section>
         <section id="contact" class="tab-content">
-            <h2>Contact</h2>
+            <h2>Contact Me</h2>
             <p>
                 If you'd like to get in touch with me, you can find my contact information and links to my social profiles below.
             </p>
+            <ul>
+                <li>Facebook: <a href="https://www.facebook.com/yourprofile">Your Profile</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your Profile</a></li>
+                <li>Twitter: <a href="https://twitter.com/yourhandle">Your Handle</a></li>
+                <li>Email: your.email@example.com</li>
+            </ul>
         </section>
     </div>
     <footer>
         &copy; 2023 Your Name
     </footer>
+    <script>
+        function showTab(tabName) {
+            var tabContent = document.querySelectorAll('.tab-content');
+            for (var i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = 'none';
+            }
+            document.getElementById(tabName).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
