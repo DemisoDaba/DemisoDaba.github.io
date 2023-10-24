@@ -62,10 +62,39 @@
             color: #fff;
             padding: 1rem 0;
         }
+
+        /* Styling for the logo and link sections */
+        .logo-link {
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+        }
     </style>
     <title>Demiso Daba - Personal Website</title>
 </head>
 <body>
+    <div class="logo-link">
+        <div class="social-link">
+            <!-- Facebook Logo -->
+            <img src="assets/img/facebook-logo.png" alt="Facebook Logo" width="40">
+            <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">Facebook: Your Profile</a>
+        </div>
+        <div class="social-link">
+            <!-- LinkedIn Logo -->
+            <img src="assets/img/linkedin-logo.png" alt="LinkedIn Logo" width="40">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn: Your Profile</a>
+        </div>
+        <div class="social-link">
+            <!-- Twitter Logo -->
+            <img src="assets/img/twitter-logo.png" alt="Twitter Logo" width="40">
+            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">Twitter: Your Handle</a>
+        </div>
+    </div>
     <img src="assets/img/my-photo.jpg" alt="Your Photo" style="display: block; margin: 0 auto; padding: 1rem;">
     <header>
         <h1>Demiso Daba</h1>
@@ -109,12 +138,7 @@
             <p>
                 If you'd like to get in touch with me, you can find my contact information and links to my social profiles below.
             </p>
-            <ul>
-                <li>Facebook: <a href="https://www.facebook.com/yourprofile">Your Profile</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your Profile</a></li>
-                <li>Twitter: <a href="https://twitter.com/yourhandle">Your Handle</a></li>
-                <li>Email: your.email@example.com</li>
-            </ul>
+            <!-- Add your contact links here -->
         </section>
         <!-- Add your content placeholders below -->
         <section class="tab-content">
@@ -143,7 +167,7 @@
         </section>
     </div>
     <footer>
-        &copy; 2023 Demiso Daba. All Rights reserved
+        &copy; 2023 Demiso Daba
     </footer>
     <script>
         function showTab(tabName) {
