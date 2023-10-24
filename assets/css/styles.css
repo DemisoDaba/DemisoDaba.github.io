@@ -60,4 +60,7 @@ footer {
     padding: 1rem 0;
 }
 
-
+/* Style the active tab content when clicked */
+.tab-content.active {
+    display: block;
+}
