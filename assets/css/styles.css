@@ -1,13 +1,12 @@
-/* Reset some default styles for better consistency */
-body, h1, h2, p, ul, li {
+/* Reset default styles */
+body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #f0f0f0;
     line-height: 1.6;
 }
 
@@ -15,52 +14,85 @@ header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
+}
+
+nav {
+    background-color: #444;
+    text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #333;
-    padding: 1rem 0;
 }
 
 nav li {
-    margin: 0 1rem;
+    margin: 0 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
-    cursor: pointer; /* Add pointer cursor to indicate interactivity */
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6600; /* Change to your desired hover color */
 }
 
 #content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
     background-color: #fff;
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .tab-content {
-    display: none; /* Initially hide all tab content */
+    display: none;
+}
+
+.tab-content:first-child {
+    display: block;
 }
 
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: disc inside;
+    margin-left: 20px;
 }
 
 footer {
-    text-align: center;
     background-color: #333;
     color: #fff;
-    padding: 1rem 0;
+    text-align: center;
+    padding: 10px;
 }
 
-/* Style the active tab content when clicked */
-.tab-content.active {
-    display: block;
-}
+/* Add additional styles as needed */
