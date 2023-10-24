@@ -7,24 +7,29 @@
     <title>Demiso Daba - Personal Website</title>
 </head>
 <body>
-    <img src="assets/img/my-photo.jpg" alt="Your Photo" style="display: block; margin: 0 auto; padding: 1rem;">
+    <!-- Header -->
     <header>
         <h1>Demiso Daba</h1>
     </header>
+
+    <!-- Navigation Menu -->
     <nav>
         <ul>
-            <li><a href="about/about.md">About Me</a></li>
-            <li><a href="experience/experience.md">Experience</a></li>
-            <li><a href="education/education.md">Education</a></li>
-            <li><a href="contact/contact.md">Contact</a></li>
+            <!-- JavaScript for generating links dynamically -->
         </ul>
     </nav>
+
+    <!-- Content Area -->
     <div id="content">
         <!-- Content from Markdown files will be loaded here -->
     </div>
+
+    <!-- Footer -->
     <footer>
-        &copy; 2023 Demiso Daba
+        &copy; 2023 Demiso Daba. All rights reserved
     </footer>
+
+    <!-- JavaScript for loading Markdown content -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.2.2/marked.min.js"></script>
     <script>
         function loadContent(markdownFile) {
@@ -36,8 +41,16 @@
         }
     </script>
     <script>
-        // Load the initial content (e.g., About Me)
-        loadContent('about/about.md');
+        // Generate links to all folders dynamically
+        const nav = document.querySelector('nav ul');
+        const folderNames = ['about', 'experience', 'education', 'contact', 'blog', 'cv'];
+
+        folderNames.forEach(folderName => {
+            const capitalizedFolderName = folderName.charAt(0).toUpperCase() + folderName.slice(1);
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<a href="${folderName}/${folderName}.md">${capitalizedFolderName}</a>`;
+            nav.appendChild(listItem);
+        });
     </script>
 </body>
 </html>
