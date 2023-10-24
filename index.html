@@ -15,42 +15,81 @@
     <!-- Navigation Menu -->
     <nav>
         <ul>
-            <!-- JavaScript for generating links dynamically -->
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#cv">CV</a></li>
         </ul>
     </nav>
 
     <!-- Content Area -->
     <div id="content">
-        <!-- Content from Markdown files will be loaded here -->
+        <!-- About Me -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate and motivated individual with a background in web development. I love creating websites and web applications that are not only functional but also visually appealing.</p>
+            <!-- Add more content as needed -->
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Web Developer</strong><br>
+                    ABC Web Solutions<br>
+                    <a href="https://www.example.com">Website</a><br>
+                    June 2020 - Present<br>
+                    Developed and maintained web applications for clients, ensuring high performance and user-friendly experiences.
+                </li>
+                <!-- Add more experience entries as needed -->
+            </ul>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Bachelor of Science in Computer Science</strong><br>
+                    University of Techville<br>
+                    Graduated: May 2018<br>
+                    Relevant Courses: Web Development, Algorithms, Database Management
+                </li>
+                <!-- Add more education entries as needed -->
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach out to me through the following channels:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn Profile</a></li>
+                <li><strong>Twitter:</strong> <a href="https://twitter.com/YourTwitterHandle">@YourTwitterHandle</a></li>
+                <li><strong>Facebook:</strong> <a href="https://www.facebook.com/yourprofile">Your Facebook Profile</a></li>
+            </ul>
+        </section>
+
+        <!-- Blog -->
+        <section id="blog">
+            <h2>Blog</h2>
+            <!-- Add blog content as needed -->
+        </section>
+
+        <!-- CV -->
+        <section id="cv">
+            <h2>CV</h2>
+            <p>You can include your full CV or resume here.</p>
+        </section>
     </div>
 
     <!-- Footer -->
     <footer>
-        &copy; 2023 Demiso Daba. All rights reserved
+        &copy; 2023 Demiso Daba
     </footer>
-
-    <!-- JavaScript for loading Markdown content -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.2.2/marked.min.js"></script>
-    <script>
-        function loadContent(markdownFile) {
-            fetch(markdownFile)
-                .then(response => response.text())
-                .then(text => {
-                    document.getElementById('content').innerHTML = marked(text);
-                });
-        }
-    </script>
-    <script>
-        // Generate links to all folders dynamically
-        const nav = document.querySelector('nav ul');
-        const folderNames = ['about', 'experience', 'education', 'contact', 'blog', 'cv'];
-
-        folderNames.forEach(folderName => {
-            const capitalizedFolderName = folderName.charAt(0).toUpperCase() + folderName.slice(1);
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `<a href="${folderName}/${folderName}.md">${capitalizedFolderName}</a>`;
-            nav.appendChild(listItem);
-        });
-    </script>
 </body>
 </html>
