@@ -42,14 +42,6 @@
             cursor: pointer; /* Add pointer cursor to indicate interactivity */
         }
 
-        #content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 2rem;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
         .tab-content {
             display: none; /* Initially hide all tab content */
         }
@@ -57,6 +49,11 @@
         img {
             max-width: 100%;
             height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%; /* Create a circular shape */
+            width: 150px; /* Adjust the size as needed */
+            height: 150px; /* Adjust the size as needed */
         }
 
         footer {
@@ -69,6 +66,7 @@
     <title>Your Name - Personal Website</title>
 </head>
 <body>
+    <img src="assets/img/my-photo.jpg" alt="Your Photo" style="padding: 1rem;">
     <header>
         <h1>Your Name</h1>
     </header>
@@ -83,7 +81,6 @@
     <div id="content">
         <section id="about" class="tab-content">
             <h2>About Me</h2>
-            <img src="assets/img/my-photo.jpg" alt="Your Photo">
             <p>
                 Welcome to my personal website. I am a passionate individual with expertise in various fields.
                 Feel free to connect with me on social media to learn more about my background.
@@ -98,7 +95,7 @@
                 - Role 3
             </p>
         </section>
-        <section id="education" class "tab-content">
+        <section id="education" class="tab-content">
             <h2>Education</h2>
             <p>
                 I completed my education at the following institutions and earned the following degrees:
