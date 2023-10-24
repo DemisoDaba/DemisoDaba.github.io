@@ -4,92 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <title>Demiso Daba - Personal Website</title>
+    <title>Your Name - Personal Website</title>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <h1>Demiso Daba</h1>
+        <h1>Your Name</h1>
     </header>
-
-    <!-- Navigation Menu -->
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#cv">CV</a></li>
+            <li><a href="#about" onclick="showTab('about')">About Me</a></li>
+            <li><a href="#experience" onclick="showTab('experience')">Experience</a></li>
+            <li><a href="#education" onclick="showTab('education')">Education</a></li>
+            <li><a href="#contact" onclick="showTab('contact')">Contact</a></li>
         </ul>
     </nav>
-
-    <!-- Content Area -->
     <div id="content">
-        <!-- About Me -->
-        <section id="about">
+        <section id="about" class="tab-content">
             <h2>About Me</h2>
-            <p>I'm a passionate and motivated individual with a background in web development. I love creating websites and web applications that are not only functional but also visually appealing.</p>
-            <!-- Add more content as needed -->
+            <img src="assets/img/my-photo.jpg" alt="Your Photo">
+            <p>
+                Welcome to my personal website. I am a passionate individual with expertise in various fields.
+                Feel free to connect with me on social media to learn more about my background.
+            </p>
         </section>
-
-        <!-- Experience -->
-        <section id="experience">
+        <section id="experience" class="tab-content">
             <h2>Experience</h2>
-            <ul>
-                <li>
-                    <strong>Web Developer</strong><br>
-                    ABC Web Solutions<br>
-                    <a href="https://www.example.com">Website</a><br>
-                    June 2020 - Present<br>
-                    Developed and maintained web applications for clients, ensuring high performance and user-friendly experiences.
-                </li>
-                <!-- Add more experience entries as needed -->
-            </ul>
+            <p>
+                I have several years of experience working in different roles, including:
+                - Role 1
+                - Role 2
+                - Role 3
+            </p>
         </section>
-
-        <!-- Education -->
-        <section id="education">
+        <section id="education" class="tab-content">
             <h2>Education</h2>
+            <p>
+                I completed my education at the following institutions and earned the following degrees:
+                - University A: Bachelor's Degree
+                - University B: Master's Degree
+                - University C: Ph.D.
+            </p>
+        </section>
+        <section id="contact" class="tab-content">
+            <h2>Contact Me</h2>
+            <p>
+                If you'd like to get in touch with me, you can find my contact information and links to my social profiles below.
+            </p>
             <ul>
-                <li>
-                    <strong>Bachelor of Science in Computer Science</strong><br>
-                    University of Techville<br>
-                    Graduated: May 2018<br>
-                    Relevant Courses: Web Development, Algorithms, Database Management
-                </li>
-                <!-- Add more education entries as needed -->
+                <li>Facebook: <a href="https://www.facebook.com/yourprofile">Your Profile</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your Profile</a></li>
+                <li>Twitter: <a href="https://twitter.com/yourhandle">Your Handle</a></li>
+                <li>Email: your.email@example.com</li>
             </ul>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach out to me through the following channels:</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn Profile</a></li>
-                <li><strong>Twitter:</strong> <a href="https://twitter.com/YourTwitterHandle">@YourTwitterHandle</a></li>
-                <li><strong>Facebook:</strong> <a href="https://www.facebook.com/yourprofile">Your Facebook Profile</a></li>
-            </ul>
-        </section>
-
-        <!-- Blog -->
-        <section id="blog">
-            <h2>Blog</h2>
-            <!-- Add blog content as needed -->
-        </section>
-
-        <!-- CV -->
-        <section id="cv">
-            <h2>CV</h2>
-            <p>You can include your full CV or resume here.</p>
         </section>
     </div>
-
-    <!-- Footer -->
     <footer>
-        &copy; 2023 Demiso Daba
+        &copy; 2023 Your Name
     </footer>
+    <script>
+        function showTab(tabName) {
+            var tabContent = document.querySelectorAll('.tab-content');
+            for (var i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = 'none';
+            }
+            document.getElementById(tabName).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
