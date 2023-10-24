@@ -13,17 +13,31 @@
     </header>
     <nav>
         <ul>
-            <li><a href="about/about.html">About Me</a></li>
-            <li><a href="experience/experience.html">Experience</a></li>
-            <li><a href="education/education.html">Education</a></li>
-            <li><a href="contact/contact.html">Contact</a></li>
+            <li><a href="about/about.md">About Me</a></li>
+            <li><a href="experience/experience.md">Experience</a></li>
+            <li><a href="education/education.md">Education</a></li>
+            <li><a href="contact/contact.md">Contact</a></li>
         </ul>
     </nav>
     <div id="content">
-        <!-- Content from the separate HTML files will be loaded here via links -->
+        <!-- Content from Markdown files will be loaded here -->
     </div>
     <footer>
         &copy; 2023 Demiso Daba
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.2.2/marked.min.js"></script>
+    <script>
+        function loadContent(markdownFile) {
+            fetch(markdownFile)
+                .then(response => response.text())
+                .then(text => {
+                    document.getElementById('content').innerHTML = marked(text);
+                });
+        }
+    </script>
+    <script>
+        // Load the initial content (e.g., About Me)
+        loadContent('about/about.md');
+    </script>
 </body>
 </html>
