@@ -3,180 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Reset some default styles for better consistency */
-        body, h1, h2, p, ul, li {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-        }
-
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-            padding: 1rem 0;
-        }
-
-        nav li {
-            margin: 0 1rem;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            cursor: pointer; /* Add pointer cursor to indicate interactivity */
-        }
-
-        .tab-content {
-            display: none; /* Initially hide all tab content */
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            border-radius: 50%; /* Create a circular shape */
-            width: 150px; /* Adjust the size as needed */
-            height: 150px; /* Adjust the size as needed */
-        }
-
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-        }
-
-        /* Styling for the logo and link sections */
-        .logo-link {
-            display: flex;
-            justify-content: space-between;
-            margin: 1rem;
-        }
-
-        .social-link {
-            display: flex;
-            align-items: center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <title>Demiso Daba - Personal Website</title>
 </head>
 <body>
-    <div class="logo-link">
-        <div class="social-link">
-            <!-- Facebook Logo -->
-            <img src="assets/img/facebook-logo.png" alt="Facebook Logo" width="40">
-            <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">Facebook: Your Profile</a>
-        </div>
-        <div class="social-link">
-            <!-- LinkedIn Logo -->
-            <img src="assets/img/linkedin-logo.png" alt="LinkedIn Logo" width="40">
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn: Your Profile</a>
-        </div>
-        <div class="social-link">
-            <!-- Twitter Logo -->
-            <img src="assets/img/twitter-logo.png" alt="Twitter Logo" width="40">
-            <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer">Twitter: Your Handle</a>
-        </div>
-    </div>
     <img src="assets/img/my-photo.jpg" alt="Your Photo" style="display: block; margin: 0 auto; padding: 1rem;">
     <header>
         <h1>Demiso Daba</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="#about" onclick="showTab('about')">About Me</a></li>
-            <li><a href="#experience" onclick="showTab('experience')">Experience</a></li>
-            <li><a href="#education" onclick="showTab('education')">Education</a></li>
-            <li><a href="#contact" onclick="showTab('contact')">Contact</a></li>
+            <li><a href="about/about.html">About Me</a></li>
+            <li><a href="experience/experience.html">Experience</a></li>
+            <li><a href="education/education.html">Education</a></li>
+            <li><a href="contact/contact.html">Contact</a></li>
         </ul>
     </nav>
     <div id="content">
-        <section id="about" class="tab-content">
-            <h2>About Me</h2>
-            <p>
-                Welcome to my personal website. I am a passionate individual with expertise in various fields.
-                Feel free to connect with me on social media to learn more about my background.
-            </p>
-        </section>
-        <section id="experience" class="tab-content">
-            <h2>Experience</h2>
-            <p>
-                I have several years of experience working in different roles, including:
-                - Role 1
-                - Role 2
-                - Role 3
-            </p>
-        </section>
-        <section id="education" class="tab-content">
-            <h2>Education</h2>
-            <p>
-                I completed my education at the following institutions and earned the following degrees:
-                - University A: Bachelor's Degree
-                - University B: Master's Degree
-                - University C: Ph.D.
-            </p>
-        </section>
-        <section id="contact" class="tab-content">
-            <h2>Contact Me</h2>
-            <p>
-                If you'd like to get in touch with me, you can find my contact information and links to my social profiles below.
-            </p>
-            <!-- Add your contact links here -->
-        </section>
-        <!-- Add your content placeholders below -->
-        <section class="tab-content">
-            <h2>About Me Content</h2>
-            <p>
-                Replace this placeholder with your actual 'About Me' content.
-            </p>
-        </section>
-        <section class="tab-content">
-            <h2>Experience Content</h2>
-            <p>
-                Replace this placeholder with your actual 'Experience' content.
-            </p>
-        </section>
-        <section class="tab-content">
-            <h2>Education Content</h2>
-            <p>
-                Replace this placeholder with your actual 'Education' content.
-            </p>
-        </section>
-        <section class="tab-content">
-            <h2>Contact Content</h2>
-            <p>
-                Replace this placeholder with your actual 'Contact' content.
-            </p>
-        </section>
+        <!-- Content from the separate HTML files will be loaded here via links -->
     </div>
     <footer>
         &copy; 2023 Demiso Daba
     </footer>
-    <script>
-        function showTab(tabName) {
-            var tabContent = document.querySelectorAll('.tab-content');
-            for (var i = 0; i < tabContent.length; i++) {
-                tabContent[i].style.display = 'none';
-            }
-            document.getElementById(tabName).style.display = 'block';
-        }
-    </script>
 </body>
 </html>
