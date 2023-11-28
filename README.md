@@ -1,7 +1,7 @@
 # Personal Portfolio ⚡️ 
 > A clean, beautiful, responsive portfolio template for Software Developers!
 
-> https://DemisoDaba.github.io
+
 
 ![GitHub stars](https://img.shields.io/github/stars/DemisoDaba/DemisoDaba.github.io) 
 ![GitHub forks](https://img.shields.io/github/forks/DemisoDaba/DemisoDaba.github.io)
