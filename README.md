@@ -11,8 +11,13 @@
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 ### Website Preview
-
-
+<p align="center"> 
+  <kbd>
+    <a href="https://DemisoDaba.github.io" target="_blank"><img src="examples/preview.gif">
+  </a>
+  </kbd>
+</p>
+⭐ Star me on GitHub — it helps!
 ## Features 📋
 ⚡️ Fully Responsive\
 ⚡️ Valid HTML5 & CSS3\
