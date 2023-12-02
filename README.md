@@ -1,70 +1,76 @@
-# Personal Portfolio ⚡️ 
-> A clean, beautiful, responsive portfolio template for Software Developers!
+# Welcome to My Personal Portfolio! 🚀
 
+> An elegant, responsive portfolio template designed for Software Developers!
 
-
-![GitHub stars](https://img.shields.io/github/stars/DemisoDaba/DemisoDaba.github.io) 
+![GitHub stars](https://img.shields.io/github/stars/DemisoDaba/DemisoDaba.github.io)
 ![GitHub forks](https://img.shields.io/github/forks/DemisoDaba/DemisoDaba.github.io)
-[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/DemisoDaba/DemisoDaba.github.io/commits/master)
 [![Website shields.io](https://img.shields.io/badge/website-up-yellow)](http://DemisoDaba.github.io/)
 [![Ask Me Anything !](https://img.shields.io/badge/ask%20me-linkedin-1abc9c.svg)](https://www.linkedin.com/in/demiso-daba-swre0/)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-### Website Preview
+### 🌟 Take a Glimpse
 <p align="center"> 
   <kbd>
-    <a href="https://DemisoDaba.github.io" target="_blank"><img src="examples/preview.gif">
+    <a href="https://DemisoDaba.github.io" target="_blank"><img src="examples/preview.gif" alt="Portfolio Preview">
   </a>
   </kbd>
 </p>
-⭐ Star me on GitHub — it helps!
-## Features 📋
-⚡️ Fully Responsive\
-⚡️ Valid HTML5 & CSS3\
-⚡️ Typing animation using `Typed.js`\
-⚡️ Easy to modify
 
-## Installation & Deployment 📦
-- Clone the repository and modify the content of <b>index.html</b> according to your requirement.
-- Add or remove images from `DemisoDaba.github.io/assets/img/` directory as per your requirement.
-- I highly recommend to use [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) to deploy the website the EASIEST WAY.
-- To deploy your website, first you need to create github repository with name `<your-github-username>.github.io`. Please don't give any other name.
-- Push the generated code to the `master` branch of this repository.
-- <b>NOTE:</b> Make sure to set `analyticsId` from your Google Analytics account inside the Google Analytics script tag, if you want to use your own Google Analytics account.
+⭐ Don't forget to star this repository on GitHub—it truly makes a difference!
+
+---
+
+## Features 📋
+⚡️ **Fully Responsive**\
+⚡️ **Valid HTML5 & CSS3**\
+⚡️ **Integrate Typing Animation with `Typed.js`**\
+⚡️ **Highly Customizable**
+
+---
+
+## Get Started 🚀
+1. Clone the repository.
+2. Tailor the content in <b>index.html</b> to suit your needs.
+3. Customize images in `DemisoDaba.github.io/assets/img/` according to your preferences.
+4. Utilize [Github Pages](https://create-react-app.dev/docs/deployment/#github-pages) for hassle-free deployment.
+5. Create a GitHub repository named `<your-github-username>.github.io`.
+6. Push the modified code to the `master` branch of this repository.
+7. <b>NOTE:</b> Set `analyticsId` from your Google Analytics account within the Google Analytics script tag if using your own.
+
+---
 
 ## Sections 📚
-✔️ About me\
-✔️ Experience\
-✔️ Projects \
-✔️ Skills \
-✔️ Education\
-✔️ Contact Info\
-✔️ Resume
+✔️ **About Me**\
+✔️ **Experience**\
+✔️ **Projects** \
+✔️ **Skills** \
+✔️ **Education**\
+✔️ **Contact Info**\
+✔️ **Resume**
 
-To view a live example, **[click here](https://DemisoDaba.github.io/)**
+Experience it live: **[Click Here](https://DemisoDaba.github.io/)**
+
+---
 
 ## Tools Used 🛠️
-* [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - To host my static website (HTML, CSS, JS).
-* [<b>Materialize</b>](https://materializecss.com/) - A CSS framework to get Google's Material Design components.
+* [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - Host static website (HTML, CSS, JS).
+* [<b>Materialize</b>](https://materializecss.com/) - CSS framework for Google's Material Design components.
 * [<b>Typed.js</b>](https://mattboldt.com/demos/typed-js/) - JavaScript Library
 
-## Contributing 💡
-#### Step 1
+---
 
-- **Option 1**
+## Contributing 💡
+1. **Option 1**
     - 🍴 Fork this repo!
 
-- **Option 2**
+2. **Option 2**
     - 👯 Clone this repo to your local machine.
 
+3. **Craft your magic** 🔨🔨🔨
 
-#### Step 2
+4. **Create a new pull request.**
 
-- **Build your code** 🔨🔨🔨
-
-#### Step 3
-
-- 🔃 Create a new pull request.
+---
 
 ## License 📄
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details.
