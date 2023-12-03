@@ -1,6 +1,5 @@
+# Welcome to My Personal Portfolio! 🚀
 
-
-> # Welcome to My Personal Portfolio! 🚀
 > ## Descriptions
 > This repository contains a version of SE Foundations portifolio, requested by [Alx-Africa School](https://www.alxafrica.com/) in partial fullfilment for Foundations, done by [Demiso Daba](https://github.com/DemisoDaba/)
 
