@@ -1,6 +1,10 @@
 # Welcome to My Personal Portfolio! 🚀
 
+> ## Descriptions
 > An elegant, responsive portfolio template designed for Software Developers!
+> This repository contains a version of portifolio. 
+> It is totally requested by [Alx-Africa School](https://www.alxafrica.com/) in partial fullfilment for Foundations.
+> Done by [Demiso Daba](https://github.com/DemisoDaba/)
 
 ![GitHub stars](https://img.shields.io/github/stars/DemisoDaba/DemisoDaba.github.io)
 ![GitHub forks](https://img.shields.io/github/forks/DemisoDaba/DemisoDaba.github.io)
